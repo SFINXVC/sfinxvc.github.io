@@ -242,31 +242,53 @@
 
     /* ── 3D SCREENSHOT ── */
     .screenshot-scene {
-      perspective: 1200px;
-      padding: 0 24px 80px;
-      max-width: 1000px;
+      perspective: 1400px;
+      perspective-origin: 50% 50%;
+      padding: 40px 48px 100px;
+      max-width: 1100px;
       margin: 0 auto;
+      position: relative;
+    }
+
+    .screenshot-scene::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -40%);
+      width: 70%;
+      height: 60%;
+      background: radial-gradient(ellipse at center,
+        oklch(0.6267 0.1388 160.4 / 35%) 0%,
+        oklch(0.6267 0.1388 160.4 / 10%) 50%,
+        transparent 75%
+      );
+      filter: blur(48px);
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+
+    .screenshot-scene:hover::before {
+      opacity: 1;
     }
 
     .screenshot-card {
-      transform: rotateX(6deg) rotateY(-2deg) scale(0.97);
+      position: relative;
+      z-index: 1;
+      transform: rotateX(6deg) rotateY(0deg) translateY(0px);
       transform-style: preserve-3d;
-      transition: transform 0.5s ease, box-shadow 0.5s ease;
-      border: 1px solid var(--border);
+      transform-origin: center center;
+      transition: transform 0.08s linear, box-shadow 0.3s ease;
+      border: 1px solid oklch(1 0 0 / 14%);
+      border-radius: 8px;
+      overflow: hidden;
       box-shadow:
-        0 2px 0 0 oklch(1 0 0 / 6%) inset,
-        0 40px 80px -20px rgba(0,0,0,0.7),
-        0 0 0 1px oklch(0.6267 0.1388 160.4 / 6%);
-      background: var(--bg);
+        0 0 0 1px oklch(0.6267 0.1388 160.4 / 6%),
+        0 30px 60px -10px rgba(0,0,0,0.6),
+        0 60px 100px -20px rgba(0,0,0,0.5);
       will-change: transform;
-    }
-
-    .screenshot-card:hover {
-      transform: rotateX(1deg) rotateY(0deg) scale(1);
-      box-shadow:
-        0 2px 0 0 oklch(1 0 0 / 8%) inset,
-        0 60px 120px -20px rgba(0,0,0,0.8),
-        0 0 0 1px oklch(0.6267 0.1388 160.4 / 12%);
     }
 
     .screenshot-card img {
@@ -390,19 +412,31 @@
   document.addEventListener('click', () => menu.classList.remove('open'));
   menu.addEventListener('click', (e) => e.stopPropagation());
 
-  // ── Subtle 3D tilt on mousemove ──
+  // ── 3D tilt on mousemove ──
   const card = document.getElementById('card3d');
   const scene = card.parentElement;
 
   scene.addEventListener('mousemove', (e) => {
     const rect = scene.getBoundingClientRect();
-    const x = (e.clientX - rect.left) / rect.width  - 0.5;
+    const x = (e.clientX - rect.left) / rect.width  - 0.5;  // -0.5 to 0.5
     const y = (e.clientY - rect.top)  / rect.height - 0.5;
-    card.style.transform = `rotateX(${-y * 6}deg) rotateY(${x * 6}deg) scale(1)`;
+
+    const rotX = -y * 14;  // tilt up/down
+    const rotY =  x * 14;  // tilt left/right
+
+    card.classList.add('tilting');
+    card.style.transform = `rotateX(${rotX}deg) rotateY(${rotY}deg) translateY(-12px)`;
+    card.style.boxShadow = `
+      0 0 0 1px oklch(0.6267 0.1388 160.4 / 18%),
+      0 40px 80px -10px rgba(0,0,0,0.7),
+      0 80px 120px -20px rgba(0,0,0,0.5)
+    `;
   });
 
   scene.addEventListener('mouseleave', () => {
-    card.style.transform = 'rotateX(6deg) rotateY(-2deg) scale(0.97)';
+    card.classList.remove('tilting');
+    card.style.transform = 'rotateX(6deg) rotateY(0deg) translateY(0px)';
+    card.style.boxShadow = '';
   });
 </script>
 
