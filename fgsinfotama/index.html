@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FGS Infotama — Download</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:             oklch(0.1822 0 0);
+      --card:           oklch(0.285 0 0);
+      --secondary:      oklch(0.2393 0 0);
+      --accent-bg:      oklch(0.371 0 0);
+      --border:         oklch(1 0 0 / 10%);
+
+      --fg:             oklch(0.985 0 0);
+      --fg-muted:       oklch(0.708 0 0);
+      --fg-subtle:      oklch(0.556 0 0);
+
+      --primary:        oklch(0.6267 0.1388 160.4);
+      --primary-dim:    oklch(0.6267 0.1388 160.4 / 12%);
+      --primary-border: oklch(0.6267 0.1388 160.4 / 28%);
+
+      --radius: 0.625rem;
+      --font: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: var(--font);
+      font-size: 15px;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    /* ── NAV ── */
+    nav {
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: var(--bg);
+    }
+    .nav-inner {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 52px;
+      display: flex;
+      align-items: center;
+    }
+    .nav-logo {
+      font-weight: 700;
+      font-size: 15px;
+      color: var(--fg);
+      text-decoration: none;
+    }
+    .nav-logo span { color: var(--primary); }
+
+    /* ── WRAPPER ── */
+    .wrapper {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      padding: 72px 0 56px;
+      display: grid;
+      grid-template-columns: 1fr 1.15fr;
+      gap: 64px;
+      align-items: center;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: var(--primary-dim);
+      border: 1px solid var(--primary-border);
+      border-radius: 99px;
+      padding: 4px 12px;
+      font-size: 12px;
+      color: var(--primary);
+      margin-bottom: 20px;
+    }
+    .badge .dot {
+      width: 5px; height: 5px;
+      background: var(--primary);
+      border-radius: 50%;
+    }
+
+    .hero h1 {
+      font-size: clamp(26px, 4vw, 40px);
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      color: var(--fg);
+      line-height: 1.2;
+      margin-bottom: 14px;
+    }
+
+    .hero p {
+      font-size: 15px;
+      color: var(--fg-muted);
+      margin-bottom: 32px;
+      line-height: 1.7;
+    }
+
+    .dl-buttons {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 14px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 18px;
+      border-radius: var(--radius);
+      font-family: var(--font);
+      font-size: 13px;
+      font-weight: 600;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .btn-primary {
+      background: var(--primary);
+      color: oklch(0.1 0.03 160);
+    }
+    .btn-primary:hover { filter: brightness(1.1); transform: translateY(-1px); }
+    .btn-ghost {
+      background: var(--secondary);
+      color: var(--fg);
+      border: 1px solid var(--border);
+    }
+    .btn-ghost:hover { background: var(--accent-bg); transform: translateY(-1px); }
+
+    .dl-note {
+      font-size: 12px;
+      color: var(--fg-subtle);
+    }
+
+    /* ── SCREENSHOT ── */
+    .screenshot-wrap {
+      border-radius: calc(var(--radius) * 1.5);
+      overflow: hidden;
+      border: 1px solid var(--border);
+      box-shadow: 0 24px 60px rgba(0,0,0,0.5);
+    }
+    .screenshot-wrap img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    /* ── DIVIDER ── */
+    hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 56px 0;
+    }
+
+    /* ── REQUIREMENTS ── */
+    .section-label {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--fg-subtle);
+      margin-bottom: 16px;
+    }
+
+    .req-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 56px;
+    }
+
+    .req-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .req-icon {
+      width: 34px; height: 34px;
+      background: var(--secondary);
+      border-radius: calc(var(--radius) - 2px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--fg-muted);
+    }
+
+    .req-name {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--fg);
+    }
+    .req-spec {
+      font-size: 12px;
+      color: var(--fg-muted);
+      margin-top: 2px;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 24px 0;
+    }
+    .footer-inner {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .footer-left, .footer-right {
+      font-size: 12px;
+      color: var(--fg-subtle);
+    }
+    .footer-left a {
+      color: var(--fg-muted);
+      text-decoration: none;
+    }
+    .footer-left a:hover { color: var(--fg); }
+
+    @media (max-width: 680px) {
+      .hero { grid-template-columns: 1fr; gap: 36px; padding: 48px 0 40px; }
+      .hero-visual { order: -1; }
+      .req-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">FGS <span>Infotama</span></a>
+  </div>
+</nav>
+
+<div class="wrapper">
+  <section class="hero">
+    <div class="hero-text">
+      <div class="badge"><span class="dot"></span> v0.0.1 — latest</div>
+      <h1>Trade with clarity.<br>Every market move,<br>in one place.</h1>
+      <p>A focused desktop experience built for traders who want to stay on top of the market — without the noise.</p>
+
+      <div class="dl-buttons">
+        <a href="#" class="btn btn-primary">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg>
+          Download for Windows
+        </a>
+        <a href="#" class="btn btn-ghost">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+          Download for macOS
+        </a>
+      </div>
+      <div class="dl-note">Windows 10+ &nbsp;·&nbsp; macOS 11+</div>
+    </div>
+
+    <div class="hero-visual screenshot-wrap">
+      <img src="https://sfinxv.is-a.dev/fgsinfotama/Untitled.jpg" alt="FGS Infotama" />
+    </div>
+  </section>
+
+  <hr>
+
+  <div class="section-label">System Requirements</div>
+  <div class="req-grid">
+    <div class="req-card">
+      <div class="req-icon">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg>
+      </div>
+      <div>
+        <div class="req-name">Windows</div>
+        <div class="req-spec">Windows 10 or later · x64</div>
+      </div>
+    </div>
+    <div class="req-card">
+      <div class="req-icon">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+      </div>
+      <div>
+        <div class="req-name">macOS</div>
+        <div class="req-spec">macOS 11 or later · Apple Silicon & Intel</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-left">© 2026 FGS Infotama &nbsp;·&nbsp; <a href="https://github.com/SFINXVC/fgsinfotama/releases">All releases</a></div>
+    <div class="footer-right">Built with Tauri</div>
+  </div>
+</footer>
+
+</body>
+</html>
