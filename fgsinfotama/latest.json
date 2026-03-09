@@ -1,13 +1,13 @@
 {
-  "version": "0.0.2",
-  "pub_date": "2026-03-08T18:54:26.097Z",
+  "version": "0.0.4",
+  "pub_date": "2026-03-09T01:05:45.933Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/SFINXVC/fgsinfotama/releases/download/untagged-5d5780b530ab6bfa5d83/FGS.Infotama_0.0.2_x64_en-US.msi",
-      "signature": "Not Found"
+      "url": "https://github.com/SFINXVC/fgsinfotama/releases/download/v0.0.4/FGS.Infotama_0.0.4_x64_en-US.msi",
+      "signature": ""
     },
     "darwin-aarch64": {
-      "url": "https://github.com/SFINXVC/fgsinfotama/releases/download/untagged-5d5780b530ab6bfa5d83/FGS.Infotama_0.0.2_aarch64.dmg",
+      "url": "https://github.com/SFINXVC/fgsinfotama/releases/download/v0.0.4/FGS.Infotama_0.0.4_aarch64.dmg",
       "signature": ""
     },
     "darwin-x86_64": {
