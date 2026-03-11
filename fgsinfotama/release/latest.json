@@ -1,0 +1,35 @@
+{
+  "version": "0.0.1",
+  "notes": "See the assets to download this version and install.",
+  "pub_date": "2026-03-08T18:32:02.218Z",
+  "platforms": {
+    "darwin-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVScDlEM01Oa01zeWdtaFBORWg5bnY0NGs4cTdYUWtPMzJaQVN5UHdQUXd6UjBicCt2OXBJM1NwcHpkWDJFQXdndlZQbXVyNmFzQWxWdTIzcWU3NGF3WlNSYW1mbTVnL0FvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzcyOTk0MzIxCWZpbGU6RkdTIEluZm90YW1hLmFwcC50YXIuZ3oKOWlQbUR2bEEwd2k5MDFVSGdvbjBGbk5VZ05yZGdoRXhEU1JZaDNLTEdEVGJjWGtEVWU4U3R6clRtcU9RVVU1aEdNU1daR2NnbkI5Yk5QcjdEdjZ5QUE9PQo=",
+      "url": "https://github.com/SFINXVC/fgsinfotama/releases/download/v0.0.1/FGS.Infotama_x64.app.tar.gz"
+    },
+    "darwin-x86_64-app": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVScDlEM01Oa01zeWdtaFBORWg5bnY0NGs4cTdYUWtPMzJaQVN5UHdQUXd6UjBicCt2OXBJM1NwcHpkWDJFQXdndlZQbXVyNmFzQWxWdTIzcWU3NGF3WlNSYW1mbTVnL0FvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzcyOTk0MzIxCWZpbGU6RkdTIEluZm90YW1hLmFwcC50YXIuZ3oKOWlQbUR2bEEwd2k5MDFVSGdvbjBGbk5VZ05yZGdoRXhEU1JZaDNLTEdEVGJjWGtEVWU4U3R6clRtcU9RVVU1aEdNU1daR2NnbkI5Yk5QcjdEdjZ5QUE9PQo=",
+      "url": "https://github.com/SFINXVC/fgsinfotama/releases/download/v0.0.1/FGS.Infotama_x64.app.tar.gz"
+    },
+    "darwin-aarch64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVScDlEM01Oa01zeWwvWC9qK0tYWUtLa1F3eVFnN2dOTmpwcUxoZnZncVFXNERuUUwvbVBDbDJjczd6dUJsbnFNU2dpZVFzQVpvR1U4ZHBQUjU5ajRKaUYxTTREYVJpanc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzcyOTk0NTgxCWZpbGU6RkdTIEluZm90YW1hLmFwcC50YXIuZ3oKY2FZM2x0UFN6SHhBUHAxNmtEcnFoSlM3cUF0a1BiR1Y3UnpWU3JtSTUrQ1hSRUJFR3NpVy9QSXppVGRXRWpreFUyWFlvcTBSalQzOFZhUVNpOE1CQ3c9PQo=",
+      "url": "https://github.com/SFINXVC/fgsinfotama/releases/download/v0.0.1/FGS.Infotama_aarch64.app.tar.gz"
+    },
+    "darwin-aarch64-app": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVScDlEM01Oa01zeWwvWC9qK0tYWUtLa1F3eVFnN2dOTmpwcUxoZnZncVFXNERuUUwvbVBDbDJjczd6dUJsbnFNU2dpZVFzQVpvR1U4ZHBQUjU5ajRKaUYxTTREYVJpanc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzcyOTk0NTgxCWZpbGU6RkdTIEluZm90YW1hLmFwcC50YXIuZ3oKY2FZM2x0UFN6SHhBUHAxNmtEcnFoSlM3cUF0a1BiR1Y3UnpWU3JtSTUrQ1hSRUJFR3NpVy9QSXppVGRXRWpreFUyWFlvcTBSalQzOFZhUVNpOE1CQ3c9PQo=",
+      "url": "https://github.com/SFINXVC/fgsinfotama/releases/download/v0.0.1/FGS.Infotama_aarch64.app.tar.gz"
+    },
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVScDlEM01Oa01zeXNaWDlsb0JCS2wwd29ISjNFTVNsUTdVMFVEZHlXWEgxS0lwRFdDUzFBdENleTZlVHR1Y3YzMUM4dVN0RFUrdkJxdmV3emozNVI3TE5WN3NHbmlZRVFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzcyOTk0NzE4CWZpbGU6RkdTIEluZm90YW1hXzAuMC4xX3g2NF9lbi1VUy5tc2kKZTZkaEpwcHRvZkZPZlBKdkxDOGVkQjhHckZTOGYvb0NKazNsRk9maHRPOFVRQWpsMFVTakJOdFdVRFladU5Va3gxbXYrNUZMWWxqbVgzNmt4bHZzQXc9PQo=",
+      "url": "https://github.com/SFINXVC/fgsinfotama/releases/download/v0.0.1/FGS.Infotama_0.0.1_x64_en-US.msi"
+    },
+    "windows-x86_64-msi": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVScDlEM01Oa01zeXNaWDlsb0JCS2wwd29ISjNFTVNsUTdVMFVEZHlXWEgxS0lwRFdDUzFBdENleTZlVHR1Y3YzMUM4dVN0RFUrdkJxdmV3emozNVI3TE5WN3NHbmlZRVFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzcyOTk0NzE4CWZpbGU6RkdTIEluZm90YW1hXzAuMC4xX3g2NF9lbi1VUy5tc2kKZTZkaEpwcHRvZkZPZlBKdkxDOGVkQjhHckZTOGYvb0NKazNsRk9maHRPOFVRQWpsMFVTakJOdFdVRFladU5Va3gxbXYrNUZMWWxqbVgzNmt4bHZzQXc9PQo=",
+      "url": "https://github.com/SFINXVC/fgsinfotama/releases/download/v0.0.1/FGS.Infotama_0.0.1_x64_en-US.msi"
+    },
+    "windows-x86_64-nsis": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVScDlEM01Oa01zeWdzUGxFU3BTcWZlTlhwbm16MVhvY0V4V1JnTlVkWitYTTg0TlFlNGpHd3JiN1c1c2NPcTRXclpFK1NVd2JiMXN2UW5IQUxMbkJ0QUtUM3k0ZzF3Q2djPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzcyOTk0NzE4CWZpbGU6RkdTIEluZm90YW1hXzAuMC4xX3g2NC1zZXR1cC5leGUKTkgvVFUzOXJnY2ZVdmdXQ1ZQR1ZEUk1zbHpiR01EYy9JeWp3NStjRW5JaGNCV0l5UWhTUThLNTJrQkZLSDdkQTdsU1pDazdiTlJ5SGtmaXYwZk5PRHc9PQo=",
+      "url": "https://github.com/SFINXVC/fgsinfotama/releases/download/v0.0.1/FGS.Infotama_0.0.1_x64-setup.exe"
+    }
+  }
+}
