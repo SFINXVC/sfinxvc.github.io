@@ -1,14 +1,14 @@
 {
   "version": "0.0.2",
-  "pub_date": "2026-03-16T18:25:09.424Z",
+  "pub_date": "2026-03-16T20:59:20.585Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "",
-      "signature": ""
+      "url": "https://github.com/SFINXVC/fgsinfotama/releases/download/untagged-4922c4edcb0976aa47b5/FGS.Infotama_0.0.2_x64_en-US.msi",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVScDlEM01Oa01zeXJQcDRUTnRKZUpyT3MzaWl5QmRxSmxicEx2djlKcmRVV3BBODNVUHFnaVpybzVPaXMzTFNMaTVvVURYSGpWOEpQR1FMUHBYdG9mdjlBU2RBU3I5dlFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzczNjg1Mzk4CWZpbGU6RkdTIEluZm90YW1hXzAuMC4yX3g2NF9lbi1VUy5tc2kKdUFCRjRlSVhmSkdlUjU0N1FhTWFIUUV0SEVjdUlLRDRMY1FwUFFjVlhSRzExd01DZGJ2UUk5V3FTbHdHcndUV281RHdtNmVsc2poc2lCKzdzbFpUQUE9PQo="
     },
     "darwin-aarch64": {
-      "url": "https://github.com/SFINXVC/fgsinfotama/releases/download/untagged-5d5780b530ab6bfa5d83/FGS.Infotama_aarch64.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVScDlEM01Oa01zeWoxT0lrQitFTTZTUkRjcS8yYXFJZ0JpV3k5RllPbm5HdGpqT3J4SGFyNUU2WXAzZzBVTnhESnZZWlZXVWp0cFF1Q1lybDVRUW1lTkUvUW5CeUUxWEFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzcyOTk1MTk4CWZpbGU6RkdTIEluZm90YW1hLmFwcC50YXIuZ3oKZm1DbFhkMVZwQVhjeDQzeVg5NnZCR0prdGtDRGhjQlZEdmNRSTVvMnNXWTJ2ai9rK0hCd2hzRWRpQXAxM0hBOXl2TVN3OGFzUzNMTXUyM3JuSldNRGc9PQo="
+      "url": "https://github.com/SFINXVC/fgsinfotama/releases/download/untagged-4922c4edcb0976aa47b5/FGS.Infotama_aarch64.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVScDlEM01Oa01zeXFZQVZrWGJjMmh1UlF3NWN6T0tOcVNrNGZWMnJqZW9MTzVHeDNJV2hJTEt0WGVTenNEVklpWi9VVmpxM1Z2REtMNFFWeW5GaGxrUUhCUFBHUDFza3dnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzczNjg0OTMwCWZpbGU6RkdTIEluZm90YW1hLmFwcC50YXIuZ3oKcXRQbzZrcUZVZkJXbHl6ZitOc1NGKzNTS0ZxZnQ5SVI5eXZMcTR3QlZ2a3RnUFdEWlovUnJ3a2VobVg5b3N5TW9qc0thMFJWOUlUYjVpMTVGbVBqQUE9PQo="
     }
   }
 }
