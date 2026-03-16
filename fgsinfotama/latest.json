@@ -1,9 +1,13 @@
 {
   "version": "0.0.1",
-  "pub_date": "2026-03-11T05:48:25.539Z",
+  "pub_date": "2026-03-16T18:02:38.296Z",
   "platforms": {
+    "windows-x86_64": {
+      "url": "https://github.com/SFINXVC/fgsinfotama/releases/download/untagged-d570a53abd5029e3b955/FGS.Infotama_0.0.1_x64_en-US.msi",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVScDlEM01Oa01zeXR5eE9nUGFIRldscDdYT0hoZXd2NW9tYURLVzltd2M4RDRmbkZlMm9RdHgva2cwNStHckhpeFUzM2pGVHVmM3ZlbXVSek1pVk9CTnUwMkNvUmRhamdzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzczMDI5MjQ0CWZpbGU6RkdTIEluZm90YW1hXzAuMC4xX3g2NF9lbi1VUy5tc2kKTlZ4MHU4Unl6QjdSZXJUWENwMkozOThDYW1YR0diclpIUUI1ZkhQelhoSU43YUx4aUt3UWlOL3hQQVBQMWxWN1pkcFVDQ3l4VGl5WEQwOUpQSUM5Q2c9PQo="
+    },
     "darwin-aarch64": {
-      "url": "https://sfinxvc.github.io/fgsinfotama/release/FGS.Infotama_0.0.1_aarch64.dmg",
+      "url": "",
       "signature": ""
     }
   }
