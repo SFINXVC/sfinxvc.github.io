@@ -1,13 +1,13 @@
 {
   "version": "0.0.3",
-  "pub_date": "2026-03-16T21:31:33.936Z",
+  "pub_date": "2026-03-16T21:51:36.050Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/SFINXVC/fgsinfotama/releases/download/v0.0.3/FGS.Infotama_0.0.3_x64_en-US.msi",
+      "url": "https://sfinxv.is-a.dev/fgsinfotama/release/FGS.Infotama_0.0.3_x64_en-US.msi",
       "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVScDlEM01Oa01zeW9PdWE1RmFGemRnYnIrajVhZEY0c1kyZm9GTGxyeko0aVBuNldoZm9PbVl1bU1FR1lPZU15Y3dhYkJPclJGbjZZNjNXeEJXY3A1ZjRoT0xUOFBmZ2dVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzczNjk2NjQ0CWZpbGU6RkdTIEluZm90YW1hXzAuMC4zX3g2NF9lbi1VUy5tc2kKbEZSZHkrckl0U3lxMFZabFNsY2dZS0VodmNIU0Z2eFNrL0YyVnR2ZW15SEY3UE1QQjNhd1hrT20ybFNUc25pR2tyQnNiRUtIcko3bTI5NWRmYmxYQnc9PQo="
     },
     "darwin-aarch64": {
-      "url": "https://github.com/SFINXVC/fgsinfotama/releases/download/v0.0.3/FGS.Infotama_aarch64.app.tar.gz",
+      "url": "https://sfinxv.is-a.dev/fgsinfotama/release/FGS.Infotama_aarch64.app.tar.gz",
       "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVScDlEM01Oa01zeXVzUkdhVlA4aEdsUStSYWVlb2h0YmNtaElIdFBSdWZ3NFhIM1ZBeThPUm1JSGRaOHB5RW9OWVQrbVNtOFZvNG9hempNcXl5UUFUVnI3b0VmNFZacXdzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzczNjk1OTQzCWZpbGU6RkdTIEluZm90YW1hLmFwcC50YXIuZ3oKRTBPVWRYTy80dTczMUtSTGJoS2VXZkJHM0hFc0RGVThGU0hocVlWeGFaYmNjSEwrTC85QnljRzlCVHNUR1FXVFB3TCtFajZPOVRVSVcrRTUrcWNrQnc9PQo="
     }
   }
