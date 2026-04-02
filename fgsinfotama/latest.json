@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "pub_date": "2026-04-02T07:22:36.816Z",
+  "pub_date": "2026-04-02T07:53:41.795Z",
   "platforms": {
     "windows-x86_64": {
       "url": "https://sfinxv.is-a.dev/fgsinfotama/release/FGS.Infotama_1.0.0_x64_en-US.msi",
@@ -11,8 +11,8 @@
       "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVScDlEM01Oa01zeXNaSDV1bWp6NHhDMWlFQVJUS2F3K3RNaXlTcGhKaWdhaU5QcW9BNUluU21xZnZPVk1JTnZMOUZJWHdBb25pYmFXVE5GODlaR0tkZlJ4c3l4cnVjREF3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc1MTEzNjk5CWZpbGU6RkdTIEluZm90YW1hLmFwcC50YXIuZ3oKZlRHV2c4MnZQWnlwSURXRHdTdlRTU2V0cE9FbFNZNGg2OUFHb3VRUkFnL1JJZUJMTm5RcnNSSjJ0aFAxVzZTeEhBTzdjWjJhbXQzOU5QMnNSdEc5QlE9PQo="
     },
     "darwin-x86_64": {
-      "url": "",
-      "signature": ""
+      "url": "https://sfinxv.is-a.dev/fgsinfotama/release/FGS.Infotama_x64.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVScDlEM01Oa01zeW80ODNoOGRhVTJYMTVyQ2FKekMyNk1iUTJFQTk1b05ONjZzR0xWNWRydjMyb3NDQXpqNUE5OW1tenZYTmtUUm1lR2xnNFBXWnZqOTFLT1MzRG40dFFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc1MTEzNzcwCWZpbGU6RkdTIEluZm90YW1hLmFwcC50YXIuZ3oKeDg1aHRXSCtuQ2lHSk5Xdk04REV4dy8yVXNZNWhLbjNWV2xpS0F0SkhEZzM5M2hFZDh3ditxbGExQ0RrNTZaeTIrRUs3SlRacVlxa2xMcGRhVnRyREE9PQo="
     }
   }
 }
