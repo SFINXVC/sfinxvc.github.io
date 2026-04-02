@@ -148,6 +148,82 @@
     .btn-ghost:hover { background: var(--accent-bg); transform: translateY(-1px); }
 
     /* ── MACOS DROPDOWN ── */
+    .mac-dropdown {
+      position: relative;
+      display: inline-flex;
+    }
+
+    .mac-dropdown .btn {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      border-right: none;
+    }
+
+    .mac-dropdown-toggle {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 10px;
+      background: var(--secondary);
+      color: var(--fg);
+      border: 1px solid var(--border);
+      border-left: 1px solid var(--border);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      cursor: pointer;
+      font-size: 10px;
+      transition: all 0.15s ease;
+    }
+    .mac-dropdown-toggle:hover { background: var(--accent-bg); }
+    .mac-dropdown-toggle svg {
+      transition: transform 0.2s ease;
+    }
+    .mac-dropdown.open .mac-dropdown-toggle svg {
+      transform: rotate(180deg);
+    }
+
+    .mac-dropdown-menu {
+      position: absolute;
+      top: calc(100% + 6px);
+      left: 0;
+      right: 0;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-4px);
+      transition: all 0.15s ease;
+      z-index: 50;
+      min-width: 200px;
+    }
+    .mac-dropdown.open .mac-dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .mac-dropdown-menu a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 14px;
+      font-size: 12.5px;
+      font-weight: 500;
+      color: var(--fg);
+      text-decoration: none;
+      transition: background 0.1s ease;
+    }
+    .mac-dropdown-menu a:hover {
+      background: var(--accent-bg);
+    }
+    .mac-dropdown-menu a + a {
+      border-top: 1px solid var(--border);
+    }
+    .mac-dropdown-menu .chip-label {
+      font-size: 10px;
+      color: var(--fg-subtle);
+      margin-left: auto;
     }
 
     .dl-note {
@@ -250,10 +326,27 @@
       Download for Windows
     </a>
 
-    <a href="#" id="btn-mac-arm" class="btn btn-ghost">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-      Download for macOS
-    </a>
+    <div class="mac-dropdown" id="mac-dropdown">
+      <a href="#" id="btn-mac-arm" class="btn btn-ghost">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        Download for macOS
+      </a>
+      <button class="mac-dropdown-toggle" aria-label="More macOS options">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <div class="mac-dropdown-menu">
+        <a href="#" id="btn-mac-arm-menu">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+          Apple Silicon
+          <span class="chip-label">M1 / M2 / M3 / M4</span>
+        </a>
+        <a href="#" id="btn-mac-intel-menu">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+          Intel
+          <span class="chip-label">x86_64</span>
+        </a>
+      </div>
+    </div>
   </div>
 
   <div class="dl-note">Windows 10+ &nbsp;·&nbsp; macOS 11+</div>
@@ -285,12 +378,31 @@
       if (p?.['darwin-aarch64']?.url) {
         const url = p['darwin-aarch64'].url;
         document.getElementById('btn-mac-arm').href = url;
+        document.getElementById('btn-mac-arm-menu').href = url;
+      }
+      if (p?.['darwin-x86_64']?.url) {
+        const url = p['darwin-x86_64'].url;
+        document.getElementById('btn-mac-intel-menu').href = url;
       }
     })
     .catch(() => {
       document.getElementById('badge-version').textContent = 'latest';
     });
 
+  // ── macOS dropdown toggle ──
+  const macDropdown = document.getElementById('mac-dropdown');
+  const toggle = macDropdown.querySelector('.mac-dropdown-toggle');
+
+  toggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    macDropdown.classList.toggle('open');
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!macDropdown.contains(e.target)) {
+      macDropdown.classList.remove('open');
+    }
+  });
 
   // ── 3D tilt on mousemove ──
   const card = document.getElementById('card3d');
