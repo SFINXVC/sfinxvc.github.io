@@ -1,14 +1,18 @@
 {
-  "version": "0.0.5",
-  "pub_date": "2026-03-17T01:02:05.770Z",
+  "version": "1.0.0",
+  "pub_date": "2026-04-02T07:22:36.816Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://sfinxv.is-a.dev/fgsinfotama/release/FGS.Infotama_0.0.5_x64_en-US.msi",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVScDlEM01Oa01zeWlLMkY4WEg0V2Jpcjlpbkd0ZjJBdStORDIvM3JDQ1k1c0hZSER1NGZpM0R6cG1rQkIrTkUvM0hWTk9CNlZlc2dQVlRRUUNFd05vcmEwdkpYUUduMVFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzczNzA5MTI3CWZpbGU6RkdTIEluZm90YW1hXzAuMC41X3g2NF9lbi1VUy5tc2kKYzRyaWloVkwwazFscm1RMy8wS3Fpc0E1T2h4KzBISkI1bmpEYm85ZUxEcHEraDFHSEFhdi9ZU0hTZy9VdjErTENUNUw0SGRXMHJOTWhtcS8wdmVsQ1E9PQo="
+      "url": "https://sfinxv.is-a.dev/fgsinfotama/release/FGS.Infotama_1.0.0_x64_en-US.msi",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVScDlEM01Oa01zeWl6RlpRRE9WNThpV1NEUUFZYTY5WE42OTdpYXMvSm9LYVN0UjN1VXBDRzJUaUlpVE5KRDI0bUlUSFVFR2hBcUxNYWpwbmZwUUdUVDVrdHEwMFlZZFFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc1MTE0NTM2CWZpbGU6RkdTIEluZm90YW1hXzEuMC4wX3g2NF9lbi1VUy5tc2kKREt4Rk1TVkRrek9WRnlxV0M4cTA3VmRqT2R0RVpwKzZEZ2FFeXprMlphcWtIQVU5S0tNWGw1aGdJNXNJdjMvbTAzU0RRMjRaNFhHUUdJVmY5Q2hDQVE9PQo="
     },
     "darwin-aarch64": {
       "url": "https://sfinxv.is-a.dev/fgsinfotama/release/FGS.Infotama_aarch64.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVScDlEM01Oa01zeW9RbDJtdGNTNXdXcU9jZEN6ZnFVUTlRcWx0TU9BR25lZ3hMdm91cmhFQld6OU1TMkcrVDMwaVBHSzJGOTFKamE2ejM1bWw5SkVRSTdHQ3JYOHNJSHd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzczNzA3ODgzCWZpbGU6RkdTIEluZm90YW1hLmFwcC50YXIuZ3oKYWZ4VkJibkNPUkxUbWVIN0Q0TXVpSXY4aDNqWko3RUQ1ZlhjYW03STVYQUQ1UXl0bnpIeVBobmhNdFc2Mm1qM29SanRTOWF3VlJrV0JIdE1vdkJIQXc9PQo="
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVScDlEM01Oa01zeXNaSDV1bWp6NHhDMWlFQVJUS2F3K3RNaXlTcGhKaWdhaU5QcW9BNUluU21xZnZPVk1JTnZMOUZJWHdBb25pYmFXVE5GODlaR0tkZlJ4c3l4cnVjREF3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc1MTEzNjk5CWZpbGU6RkdTIEluZm90YW1hLmFwcC50YXIuZ3oKZlRHV2c4MnZQWnlwSURXRHdTdlRTU2V0cE9FbFNZNGg2OUFHb3VRUkFnL1JJZUJMTm5RcnNSSjJ0aFAxVzZTeEhBTzdjWjJhbXQzOU5QMnNSdEc5QlE9PQo="
+    },
+    "darwin-x86_64": {
+      "url": "",
+      "signature": ""
     }
   }
 }
